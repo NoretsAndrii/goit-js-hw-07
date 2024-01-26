@@ -24,6 +24,37 @@ p {
   padding-left: 0;
 }
 
+input {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  outline: none;
+  width: 100%;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
+
+button {
+  min-width: 86px;
+  border: 0px solid transparent;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
+
+.blue {
+  background-color: #4e75ff;
+}
+
 /*-------------------------Task-1----------------------*/
 
 .categories-list {
@@ -73,14 +104,106 @@ p {
   letter-spacing: 0.64px;
 }
 
-/*-----------------------------------------------------*/
-
+/*-------------------------Task-2----------------------*/
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  padding: 100px 156px;
+  column-gap: 24px;
+  row-gap: 48px;
+  background-color: #fff;
 }
 
 .gallery-item {
   width: calc((100% - 60px) / 3);
+}
+
+/*-------------------------Task-3----------------------*/
+
+.name-input-box {
+  width: 408px;
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.name-input {
+  margin-bottom: 16px;
+}
+
+.name-input::placeholder {
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
+
+.name-output {
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.04em;
+}
+
+/*-------------------------Task-4----------------------*/
+
+.login-form {
+  width: 408px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label-input {
+  display: block;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
+
+.label-input:first-child {
+  margin-bottom: 8px;
+}
+
+.label-input:not(:first-child) {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  margin-top: 8px;
+}
+
+/*-------------------------Task-5----------------------*/
+
+.widget {
+  width: 345px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 100px 88px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-input {
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
 }
