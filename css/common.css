@@ -39,6 +39,15 @@ input {
   letter-spacing: 0.04em;
 }
 
+input:hover,
+input:focus {
+  border-color: #000000;
+}
+
+input:focus-within {
+  border-color: #808080;
+}
+
 button {
   min-width: 86px;
   border: 0px solid transparent;
@@ -56,8 +65,18 @@ button {
   background-color: #4e75ff;
 }
 
+.blue:hover,
+.blue:focus {
+  background-color: #6c8cff;
+}
+
 .red {
   background-color: #ff4e4e;
+}
+
+.red:hover,
+.red:focus {
+  background-color: #ff7070;
 }
 
 /*-------------------------Task-1----------------------*/
