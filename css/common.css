@@ -30,6 +30,7 @@ input {
   padding: 8px 16px;
   outline: none;
   width: 100%;
+  background-color: transparent;
   color: #2e2f42;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -53,6 +54,10 @@ button {
 
 .blue {
   background-color: #4e75ff;
+}
+
+.red {
+  background-color: #ff4e4e;
 }
 
 /*-------------------------Task-1----------------------*/
@@ -206,4 +211,37 @@ button {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
   margin-bottom: 16px;
+}
+
+/*-------------------------Task-6----------------------*/
+
+.box {
+  width: 534px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 24px;
+}
+
+.input-box {
+  width: 486px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.boxes {
+  width: 486px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }

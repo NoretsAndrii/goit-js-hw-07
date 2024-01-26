@@ -10,14 +10,15 @@
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <div id="controls">
-      <input type="number" min="1" max="100" step="1" />
-      <button type="button" data-create>Create</button>
-      <button type="button" data-destroy>Destroy</button>
+    <div class="box">
+      <div class="input-box" id="controls">
+        <input type="number" min="1" max="100" step="1" />
+        <button class="blue" type="button" data-create>Create</button>
+        <button class="red" type="button" data-destroy>Destroy</button>
+      </div>
+
+      <div class="boxes" id="boxes"></div>
     </div>
-
-    <div id="boxes"></div>
-
     <script src="./js/task-6.js" type="module"></script>
   </body>
 </html>
