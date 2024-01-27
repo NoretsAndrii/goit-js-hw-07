@@ -27,9 +27,10 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 
-images.forEach((image) => {
-  gallery.insertAdjacentHTML(
-    "beforeend",
-    `<img class = "gallery-item" src = "${image.url}" alt = "${image.alt}"/>`
-  );
-});
+const transformImages = images
+  .map((item) => {
+    return `<li class = "gallery-item"><img src = "${item.url}" alt = "${item.alt}"/></li>`;
+  })
+  .join("");
+
+gallery.insertAdjacentHTML("beforeend", transformImages);

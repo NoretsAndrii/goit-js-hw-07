@@ -28,11 +28,14 @@ function destroyBoxes() {
 }
 
 createBtn.addEventListener("click", () => {
-  if (inputNumber.value < 1 || inputNumber.value > 100) {
+  const inputValue = Number.parseInt(inputNumber.value);
+  console.log(inputValue);
+
+  if (inputValue < 1 || inputValue > 100) {
     return;
   }
   destroyBoxes();
-  createBoxes(inputNumber.value);
+  createBoxes(inputValue);
   inputNumber.value = "";
 });
 
