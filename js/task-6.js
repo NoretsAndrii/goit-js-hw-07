@@ -2,6 +2,7 @@ const inputNumber = document.querySelector("input");
 const createBtn = document.querySelector("[data-create]");
 const destroyBtn = document.querySelector("[data-destroy]");
 const divOfBoxes = document.querySelector("#boxes");
+const inputValue = Number.parseInt(inputNumber.value);
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -28,9 +29,6 @@ function destroyBoxes() {
 }
 
 createBtn.addEventListener("click", () => {
-  const inputValue = Number.parseInt(inputNumber.value);
-  console.log(inputValue);
-
   if (inputValue < 1 || inputValue > 100) {
     return;
   }
